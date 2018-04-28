@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.junchao.frametest">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+
+    <application
+        android:name=".global.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--VideoPlayer-->
+        <activity
+            android:name=".VideoPlayer.VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--VideoList-->
+        <activity
+            android:name=".VideoPlayer.RecyclerViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--webView-->
+        <activity
+            android:name=".WebView.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--test-->
+        <activity
+            android:name=".ui.activity.TestOrActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--customPicker-->
+        <activity
+            android:name=".CustomPicker.CustomPickerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--customPicker-->
+        <activity
+            android:name=".ui.activity.TestWXActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--Animation-->
+        <activity
+            android:name=".ui.activity.AnimActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--customView-->
+        <activity
+            android:name=".ui.activity.TestCustomViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--customView-->
+        <activity
+            android:name=".ui.activity.CalendarActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--customView-->
+        <activity
+            android:name=".ui.activity.BlankActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--OverDraw-->
+        <activity
+            android:name=".ui.activity.OverDrawTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".VitamioDemo.MediaPlayerDemo"
+            android:label="Media/MediaPlayer" >
+        </activity>
+        <activity
+            android:name=".VitamioDemo.VideoViewDemo"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:label="Media/VideoView" >
+        </activity>
+        <activity
+            android:name=".VitamioDemo.MediaPlayerDemo_Video"
+            android:label="Media/MediaPlayer" >
+        </activity>
+        <activity
+            android:name=".VitamioDemo.MediaPlayerDemo_Audio"
+            android:label="Media/MediaPlayer" >
+        </activity>
+        <activity android:name=".VitamioDemo.VitamioListActivity"/>
+        <!-- Don't forgot InitActivity -->
+
+
+    </application>
+
+</manifest>

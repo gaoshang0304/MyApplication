@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:minHeight="50dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e9e9e9"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <!-- home -->
+        <RelativeLayout
+            android:id="@+id/main_rl_menu_home"
+            style="@style/main_menu_tab">
+
+            <ImageView
+                android:id="@+id/main_iv_menu_home"
+                style="@style/main_menu_icon"
+                android:src="@drawable/sel_ic_main_menu_home" />
+
+            <TextView
+                android:id="@+id/main_tv_menu_home"
+                style="@style/main_menu_text"
+                android:layout_below="@id/main_iv_menu_home"
+                android:text="首页" />
+        </RelativeLayout>
+
+        <!-- 排行 -->
+        <RelativeLayout
+            android:id="@+id/main_rl_menu_second"
+            style="@style/main_menu_tab">
+
+            <ImageView
+                android:id="@+id/main_iv_menu_second"
+                style="@style/main_menu_icon"
+                android:src="@drawable/sel_ic_main_menu_second" />
+
+            <TextView
+                android:id="@+id/main_tv_menu_second"
+                style="@style/main_menu_text"
+                android:layout_below="@id/main_iv_menu_second"
+                android:text="排行" />
+
+        </RelativeLayout>
+
+        <!-- 发现 -->
+        <RelativeLayout
+            android:id="@+id/main_rl_menu_discover"
+            style="@style/main_menu_tab">
+
+            <ImageView
+                android:id="@+id/main_iv_menu_discover"
+                style="@style/main_menu_icon"
+                android:src="@drawable/sel_ic_main_menu_discover" />
+
+            <TextView
+                android:id="@+id/main_tv_menu_discover"
+                style="@style/main_menu_text"
+                android:layout_below="@id/main_iv_menu_discover"
+                android:text="发现" />
+
+        </RelativeLayout>
+
+        <!-- 我的 -->
+        <RelativeLayout
+            android:id="@+id/main_rl_menu_mine"
+            style="@style/main_menu_tab">
+
+            <ImageView
+                android:id="@+id/main_iv_menu_mine"
+                style="@style/main_menu_icon"
+                android:src="@drawable/sel_ic_main_menu_mine" />
+
+            <TextView
+                android:id="@+id/main_tv_menu_mine"
+                style="@style/main_menu_text"
+                android:layout_below="@id/main_iv_menu_mine"
+                android:text="我的" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
